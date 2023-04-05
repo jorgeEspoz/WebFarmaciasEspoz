@@ -1,0 +1,16 @@
+<div id ="fuera">
+    <div id ="dentro" >
+    <ngb-carousel [interval]="4500" [pauseOnHover]="false">
+        <ng-template *ngFor="let sucursal of sucursales" ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img  id ="ajuste" class="d-block w-100 redondear" src='assets/imagenes/sucursales/{{sucursal.img}}.jpg'  />
+            </div>
+            <div class="carousel-caption" >
+                <h3 id="direccion">{{sucursal.direccion}}, {{sucursal.comuna}}</h3>
+                <p id="NombreSucursal">{{sucursal.name}}</p>
+            </div>
+        </ng-template>
+    
+        </ngb-carousel>
+    </div>
+    </div>

@@ -1,0 +1,57 @@
+
+.example-form {
+    
+    display: grid;
+    width: 500px;
+    max-width: 1000px;
+  }
+
+.mat-form-field{
+  padding-bottom: 1%;
+  padding-top: 15px;
+}
+
+  ::placeholder { 
+    color: rgb(47, 144, 209); 
+    font-weight: 500;
+  
+  }
+
+
+  .listas{
+    padding-left: 5%;
+}
+
+  ::ng-deep .mat-select-value-text {
+    color : black;
+   }
+  
+  ::ng-deep .mat-focused .mat-form-field-label  {
+    /*change color of label*/
+    color:  rgb(47, 144, 209) !important;
+  font-weight: 500;
+
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color:  rgb(47, 144, 209) !important;
+  font-weight: 500;
+
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color:  rgb(47, 144, 209) !important;
+  font-weight: 500;
+
+  }
+
+ 
+  @media (max-width: 750px) {
+
+    #ajuste{
+      width: 100%;
+        }  
+      
+      } 

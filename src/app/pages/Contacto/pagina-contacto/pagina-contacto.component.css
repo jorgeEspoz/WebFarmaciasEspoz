@@ -1,0 +1,32 @@
+.center {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+
+}
+
+.formulario{
+  padding-top: 50pc;
+}
+
+.hero {
+  padding: 20px  ;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; Orden del grid */
+  width: 100%;
+  max-width: auto;
+  border-radius: 20px;
+  align-content: center;
+  border: rgb(15, 15, 15) 2px solid;
+  background-color: #e2d73ea4;
+  
+
+}
+@media (max-width: 750px) {
+
+  #ajuste{
+    width: 400px;
+    margin-left: 5%;
+      }  
+    
+    } 

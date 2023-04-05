@@ -1,0 +1,30 @@
+<div class="listas">
+
+<div class="row">
+	<div class="col">
+		<div ngbDropdown class="d-inline-block">
+			<button type="button" class="btn btn-outline"  ngbDropdownToggle>
+				{{opcionSeleccionada}}
+			</button>
+			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+				<button ngbDropdownItem (click) ="cambiarValor(consulta.descripcion)" *ngFor="let consulta of consultas">{{consulta.descripcion}}</button>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<div ngbDropdown class="d-inline-block">
+			<button type="button" class="btn btn-outline"  ngbDropdownToggle>
+				{{sucursalSeleccionada}}
+			</button>
+			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+				<button ngbDropdownItem (click) ="cambiarValorSucursal(sucursal.name)" *ngFor="let sucursal of sucursales">{{sucursal.name}}</button>
+				
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+</div>
+

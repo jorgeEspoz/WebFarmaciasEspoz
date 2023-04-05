@@ -1,0 +1,8 @@
+.listas{
+    padding-left: 5%;
+}
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }

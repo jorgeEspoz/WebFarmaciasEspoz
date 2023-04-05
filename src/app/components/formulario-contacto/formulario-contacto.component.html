@@ -1,0 +1,43 @@
+
+<form class="example-form " id="ajuste" [formGroup]="formEnviar" (ngSubmit)="enviarFormulario()">
+    <mat-form-field appearance="outline">
+      <mat-label style="color: black;">Nombres</mat-label>
+      <input formControlName = "nombres" matInput placeholder="Ex. Fernando ">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label style="color: black;">Apellidos</mat-label>
+      <input formControlName = "apellidos" matInput placeholder="Ex. Tapia Ferreira ">
+    </mat-form-field>
+    <mat-form-field  appearance="outline">
+      <mat-label style="color: black;">Telefono</mat-label>
+      <input formControlName = "telefono" matInput placeholder="Recuerda los 8 digitos 1234-5678 " >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label style="color: black;">Email</mat-label>
+        <input formControlName = "email" type="email" matInput ="emailFormControl"
+               placeholder="Por ejemplo F.tapia@gmail.com">
+      </mat-form-field>
+      
+      
+    <mat-form-field appearance="outline">
+    <mat-label style="color: black;" >Seleccionar sucursal</mat-label>
+    <mat-select  formControlName = "sucursal">
+      <mat-option *ngFor="let sucursal of sucursales" value="{{sucursal.name}}">{{sucursal.name}}----{{sucursal.direccion}} </mat-option>
+    </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+    <mat-label style="color: black;">Seleccione el tipo de consulta que desea realizar </mat-label>
+    <mat-select formControlName = "tipoConsulta">
+      <mat-option  *ngFor="let consulta of consultas" value="{{consulta.descripcion}}">{{consulta.descripcion}}</mat-option>
+    </mat-select>
+    </mat-form-field>
+   
+       
+      <mat-form-field appearance="outline">
+        <mat-label style="color: black;">Agrega un nota</mat-label>
+        <textarea formControlName ="nota" class="cols=40" rows="5" style="resize: both;" matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+      <button type="submit" class="btn btn-primary"> Enviar </button>
+    </form>
+    
